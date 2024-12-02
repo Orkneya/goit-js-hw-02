@@ -1,5 +1,5 @@
 function checkForSpam(message){
-    if (message==='spam' || message === 'sale'){
+    if ((message.toLowerCase()).includes('spam') || (message.toLowerCase()).includes('sale')){
         return true;
     } else {
         return false;
